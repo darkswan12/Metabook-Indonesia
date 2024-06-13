@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alex_brush</item>
+        <item>@font/arbutus</item>
+        <item>@font/dm_sans</item>
+        <item>@font/sonsie_one</item>
+    </array>
+</resources>
