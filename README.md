@@ -1,5 +1,5 @@
 # METABOOK ID
-
+(https://github.com/darkswan12/Metabook-Indonesia/blob/main/assets/wellcome_assets.png)
 ## Bangkit Capstone Project 2022
 
 Bangkit Capstone Team ID : C241-PS464 <br>
@@ -55,4 +55,4 @@ Dataset Links of This Project :
 
 ## Deployment Link APK Waras
 
-Download Link APK Waras:<br>
+Download Link APK Metabook ID:<br>
