@@ -52,7 +52,7 @@ class DetailBookActivity : AppCompatActivity() {
         val pageAdapter = SectionPageAdapter (supportFragmentManager,lifecycle)
         pageAdapter.addFragment(SummaryFragment(),"Summary")
         pageAdapter.addFragment(ReviewFragment(),"Review")
-        pageAdapter.addFragment(AuthorFragment(),"Author")
+        pageAdapter.addFragment(AuthorFragment(),"Forum")
         supportActionBar?.hide()
         viewPager.adapter = pageAdapter
         TabLayoutMediator(tabLayout,viewPager){tab,position ->
@@ -65,13 +65,16 @@ class DetailBookActivity : AppCompatActivity() {
         } else {
             intentData = intent.getParcelableExtra(constant.EXTRA_BOOK_INTENT)
         }
+        var isFavorite = false
 
         setUpDetail()
         setUpFavoriteFeature()
 
+
         val bookId = intentData?.id
         bookId?.let { saveRecentViewedBook(it) }
     }
+
     private fun setUpFavoriteFeature() {
         binding.apply {
             btnFavorite.setOnClickListener {
@@ -146,7 +149,7 @@ class DetailBookActivity : AppCompatActivity() {
                 .into(imgBookDetail)
 
 
-            cvBookCover.setCardBackgroundColor(HelperFunction.generateRandomColor())
+          //  cvBookCover.setCardBackgroundColor(HelperFunction.generateRandomColor())
 
             btnBack.setOnClickListener {
                 finish()

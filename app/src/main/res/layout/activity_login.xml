@@ -10,28 +10,27 @@
         android:id="@+id/imageView2"
         android:layout_width="413dp"
         android:layout_height="293dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/backgroundconcept"
+        android:contentDescription="@string/description"
+        android:src="@drawable/asset_auth"
         app:layout_constraintBottom_toTopOf="@+id/titleTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/description"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="348dp"
-        android:layout_height="220dp"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logintrans" />
+        app:layout_constraintVertical_bias="0.627"
+        app:srcCompat="@drawable/assets_logo1" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -85,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:textColorHint="@color/background_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextView"
@@ -97,6 +97,9 @@
             android:layout_height="59dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:textColorHighlight="@color/background_primary"
+            android:textColorHint="@color/background_primary"
+            android:textColorLink="?android:attr/colorActivatedHighlight"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailTextView"
@@ -119,10 +122,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordEditTextLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="347dp"
-        android:layout_height="66dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:textColorHint="@color/background_primary"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +137,8 @@
             android:id="@+id/passwordEditText"
             style="@style/mytextfield"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
+            android:layout_height="59dp"
+            android:textColorHint="@color/background_primary"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
@@ -172,7 +177,7 @@
         android:layout_height="64dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.04"
+        app:layout_constraintGuide_percent="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar

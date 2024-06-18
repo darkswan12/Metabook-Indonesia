@@ -1,20 +1,20 @@
 <resources>
-    <string name="app_name">Metabook ID</string>
+    <string name="app_name">MetaBook ID</string>
     <string name="signup">Sign Up</string>
     <string name="login">Login</string>
-    <string name="message_welcome_page">\“We do not remember days, we remember moments.\” – Cesare Pavese, The Burning Brand: Diaries 1935-1950 (1950)</string>
-    <string name="title_welcome_page">Capture Your Moment</string>
-    <string name="title_welcome_page_1">Search Your Favorite Books!</string>
-    <string name="message_welcome_page_1">Own your life; write the story the way you want it to read. Dream big, envision a glorious destiny, write your own story, and work each day to arrive @ that destiny. Youre able! Those who hold the pen hold the power.</string>
-    <string name="title_welcome_page_2">Metabook ID</string>
-    <string name="message_welcome_page_2">The Place to You to Make Your Story</string>
-    <string name="title_welcome_page_3">Getting Started</string>
-    <string name="message_welcome_page_3">Ready to Go</string>
+    <string name="message_welcome_page">\"On a silent moonless night\, I don\'t feel lonely\! I have my best friends \- my books to keep me company.\"</string>
+    <string name="title_welcome_page">Read A Book</string>
+    <string name="title_welcome_page_1">Books Are Windows Of Knowledge</string>
+    <string name="message_welcome_page_1">\"Books are a window to the world where we can see the world without traveling, just by reading a page.\"</string>
+    <string name="title_welcome_page_2">Books On Your Smartphone</string>
+    <string name="message_welcome_page_2">\" MetaBook-ID, a personal application to help you search for books with complete review features \" </string>
+    <string name="title_welcome_page_3">Welcome to MetaBook ID</string>
+    <string name="message_welcome_page_3">Get Started</string>
     <string name="title_signup_page">Complete This Field</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="message_login_page">Please Login!</string>
-    <string name="title_login_page">Ready to write a story?</string>
+    <string name="title_login_page">Welcome to MetaBook-ID</string>
     <string name="name">Name</string>
     <string name="logout">Log Out</string>
 
@@ -26,32 +26,19 @@
     <string name="check_email">Please, Check Your Data</string>
     <string name="description">lorem ipsum</string>
     <string name="username">User Name</string>
-    <string name="story_s_illustration">Image Story</string>
-    <string name="add_story">Add Story Desciption</string>
-    <string name="gallery">Gallery</string>
-    <string name="camera_x">Camera</string>
-    <string name="upload">Upload</string>
-    <string name="add_description">Input Description </string>
-    <string name="empty_image_warning">This Image is Empty</string>
-    <string name="description_image">Image Desc</string>
     <string name="title_msg">Yeah..!</string>
     <string name="success_msg">You have successfully logged in. Can\'t wait to create your story?</string>
-    <string name="next_msg">Next</string>
+    <string name="next_msg">Start</string>
     <string name="error_msg">It seems, you can\'t log in. But Don\'t Worry You Can..</string>
     <string name="title_error_msg">Error!</string>
     <string name="create_account_msg">Create Account</string>
     <string name="repeat_msg">Repeat</string>
     <string name="signup_success_msg">The account with %1$s is ready. Let\'s start creating your story.</string>
-    <string name="no_media_msg">No media selected</string>
-    <string name="granted_msg">Permission request granted</string>
-    <string name="denied_msg">Permission request denied</string>
-    <string name="failed_camera_msg">Failed to bring up the camera.</string>
-    <string name="failed_take_msg">Failed to take picture.</string>
     <string name="setting">Setting</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Search</string>
+    <string name="title_notifications">Bookmark</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_books_cover_image">books cover image</string>
@@ -71,13 +58,121 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_gallery">Profile</string>
+    <string name="menu_slideshow">About</string>
     <string name="titleDescBook">Description</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="confirm_input_password">Confirm Your Password</string>
+    <string name="menu_About">About</string>
+    <string name="Profile">Profile</string>
+    <string name="settings">Setting</string>
+    <string name="general">General</string>
+    <string name="theme">Theme</string>
+    <string name="languages">Language</string>
+    <string name="about">About Apps</string>
+    <string name="version">MetaBook-ID Version 1</string>
+    <string name="description_image">desc</string>
+    <string name="title_search">Search</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="recommend_books">Recommend Books</string>
+    <string name="buy">Buy</string>
+    <string name="metabook"><![CDATA[MetaBook is a platform to get the best and most complete popular book reviews & spoilers based on a website\nTo get the optimal reading experience, it is highly recommended to read the whole book & buy the book directly.]]></string>
+    <string name="created">Capstone Product Bangkit Batch 1 2024\nTeam C241-PS464</string>
+    <string name="katalog">
+        Judul Buku\t:\t The Joy of Less \n
+        Pengarang\t:\t FrancineJay \n
+        Penerbit\t:\t Anja Press \n
+        Tahun Terbit\t:\t 2010 \n
+        Ketebalan Buku\t:\t 286 \n
+        halaman Harga Buku Terbaru\t:\t IDR 350,000\n
+        Ukuran Buku\t:\t 15 x 23 cm\n
+        ISBN\t:\t 978-0984087310\n
+        Kategori atau Subjek\t:\t Pengembangan Diri, Minimalisme\n</string>
+    <string name="katalog1">
+        <b>PART ONE: PHILOSOPHY</b>\n
+        See your stuff for what it is (14)\n
+        You are not what you own (19)\n
+        Less stuff, less stress (24)\n
+        Less stuff, more freedom (29)\n
+        Detach from your stuff (34)\n
+        Be a good gatekeeper (39)\n
+        Embrace space (43)\n
+        Enjoy without owning (48)\n
+        The joy of enough (53)\n
+        Live simply (58)\n\n
+
+        <b>PART TWO: STREAMLINE</b>\n
+        Start over (64)\n
+        Trash, treasure, or transfer (69)\n
+        Reason for each item (75)\n
+        Everything in its place (78)\n
+        All surfaces clear (83)\n
+        Modules (88)\n
+        Limits (93)\n
+        If one comes in, one goes out (102)\n
+        Narrow down (106)\n
+        Everyday maintenance (107)\n\n
+
+        <b>PART THREE: ROOM BY ROOM</b>\n
+        Living or family room (114)\n
+        Bedroom (130)\n
+        Wardrobe (144)\n
+        Home office (159)\n
+        Kitchen and dining room (175)\n
+        Bathroom (191)\n
+        Storage spaces (204)\n
+        Gifts, heirlooms, and sentimental items (219)\n\n
+
+        <b>PART FOUR: LIFESTYLE</b>\n
+        The clutter-free family (236)\n
+        The greater good (263)\n
+        Conclusion (283)\n
+        Acknowledgments (287)\n
+\n</string>
+    <string name="katalog2">
+
+Struktur Buku: "The Joy of Less" dirancang dengan struktur yang memudahkan pembaca untuk mengikuti dan menerapkan prinsip-prinsip minimalisme dalam kehidupan sehari-hari. Buku ini dibagi menjadi empat bagian utama, yang masing-masing berfokus pada aspek berbeda dari proses decluttering dan adopsi gaya hidup minimalis:
+Filsafat Minimalis: Bagian ini menjelaskan dasar-dasar filosofis di balik minimalisme. Francine Jay menggali sejarah minimalisme, berbagai alasan mengapa orang memilih gaya hidup ini, dan manfaat psikologis serta praktis dari memiliki lebih sedikit barang.\n
+STREAMLINE Metode: Ini adalah kerangka kerja yang dikembangkan oleh Jay untuk membantu pembaca mengurangi kepemilikan mereka. STREAMLINE adalah akronim yang masing-masing hurufnya mewakili satu langkah dalam proses decluttering: Sort, Trash, Reason, Eliminate, Arrange, Maintain, Limit, If it comes back, dan Never return, Extend. Setiap langkah diuraikan dengan contoh dan strategi praktis.
+Ruang di Rumah: Di sini, Jay menawarkan panduan langkah demi langkah untuk decluttering setiap ruangan di rumah, mulai dari dapur hingga kamar tidur, ruang tamu, dan bahkan ruang kerja. Tips khusus disediakan untuk mengatasi area yang biasanya penuh sesak, seperti lemari dan laci.\n
+Gaya Hidup Minimalis: Bagian terakhir dari buku fokus pada cara-cara untuk mempertahankan minimalisme dalam jangka panjang. Pembahasan mencakup cara membuat kebiasaan yang bertahan, mengelola konsumsi, dan bahkan bagaimana mempengaruhi anggota keluarga lain untuk mengadopsi gaya hidup yang lebih sederhana.
+
+    </string>
+    <string name="title_katalog">KATALOG</string>
+    <string name="title_daftar_isi">DAFTAR ISI</string>
+    <string name="title_3">"Struktur dan Isi Lebih Detail: \"The Joy of Less\" oleh Francine Jay "</string>
+    <string name="katalog3">
+        Di sepanjang buku, Francine Jay menawarkan pandangan mendalam tentang bagaimana decluttering bukan hanya aktivitas fisik tetapi juga mental dan emosional.\n
+        Setiap bab mengandung anekdot, studi kasus, dan contoh dari pengalaman nyata yang membantu pembaca memvisualisasikan manfaat praktis dari prinsip yang dibahas. Misalnya, dalam menjelaskan metode STREAMLINE, Jay tidak hanya memberi tahu pembaca bagaimana membuang barang, tetapi juga bagaimana setiap langkah ini dapat membebaskan ruang fisik dan mental, serta mengurangi kecemasan dan stres.\n
+        Di bagian tentang ruang di rumah, Jay sangat detail dalam memberikan petunjuk dan motivasi. Misalnya, dalam mengatur dapur, dia mendorong pembaca untuk menyimpan hanya peralatan yang sering digunakan dan menjual atau menyumbangkan yang jarang dipakai.\n
+        Strategi ini tidak hanya membantu mengurangi jumlah barang di rumah tetapi juga membuat kegiatan memasak lebih efisien dan menyenangkan.\n
+        Seluruh buku diisi dengan tips yang dapat langsung diterapkan, membuat proses decluttering tampak kurang menakutkan dan lebih dapat dikelola.\n
+        Pendekatan Jay yang praktis dan langsung memberikan pembaca rasa dapat mengontrol lingkungan mereka dan, sebagai hasilnya, kehidupan mereka.\n
+        Secara keseluruhan, "The Joy of Less" menawarkan panduan yang komprehensif dan mendalam tentang minimalisme yang menggabungkan aspek teoritis dan praktis.\n
+        Ini tidak hanya sebuah buku tentang mengurangi barang, tetapi tentang memperkaya hidup dengan mengurangi keterikatan pada benda material. \n
+        \"The Joy of Less\" oleh Francine Jay \n
+
+    </string>
+    <string name="forum_discussions">Forum Discussions</string>
+    <string name="title_4">Ikhtisar Isi</string>
+    <string name="title_5">Latar Belakang Pengarang</string>
+    <string name="katalog4">
+        Francine Jay, juga dikenal dengan nama pena "Miss Minimalist," merupakan salah satu tokoh terkemuka dalam gerakan minimalis modern.\n
+        Dia memulai perjalanannya sebagai advokat gaya hidup minimalis melalui blog pribadinya, yang dengan cepat mendapatkan pengikut karena pendekatannya yang segar dan praktis terhadap pengurangan dan simplifikasi kehidupan.\n
+        Jay memiliki latar belakang yang unik yang melintasi budaya dan disiplin, memungkinkannya untuk mengintegrasikan berbagai perspektif tentang konsumerisme dan kepemilikan dalam karyanya.\n
+        Keahlian Francine tidak hanya berasal dari riset dan studi pribadi, tetapi juga dari pengalaman hidup nyata dalam mengurangi kekacauan dan menemukan kebahagiaan dalam kesederhanaan.\n
+        Melalui tulisannya, ia berbagi pengalaman ini, membuatnya tidak hanya sebagai seorang teoritis tapi juga praktisi dalam bidang minimalisme.\n
+        Tujuan Francine Jay dalam menulis \"The Joy of Less\" adalah multifaset.\n
+        Pertama, ia ingin menyebarkan kesadaran tentang manfaat dari gaya hidup minimalis, yang tidak hanya meliputi pengurangan kekacauan fisik tetapi juga pengurangan stres dan kecemasan yang sering kali menyertai konsumerisme berlebih. Jay berpendapat bahwa dengan memiliki lebih sedikit, kita dapat menciptakan lebih banyak ruang untuk kegiatan yang benar-benar memperkaya hidup kita, seperti menghabiskan waktu bersama keluarga, mengejar hobi, atau merenung.\n
+        Kedua, melalui bukunya, Francine berusaha memberikan panduan praktis tentang cara mencapai minimalisme. Ini bukan hanya tentang membuang barang, tetapi tentang mengadopsi filosofi hidup yang lebih sadar dan terukur. Dia menawarkan strategi konkret untuk decluttering secara efektif, membuat keputusan tentang apa yang kita simpan dan apa yang kita buang, dan menetapkan prioritas yang mencerminkan nilai-nilai pribadi kita lebih akurat.\n
+        Ketiga, \"The Joy of Less\" juga bertujuan untuk mengubah cara kita berpikir tentang konsumsi dan kepemilikan. Jay mendesak pembaca untuk mempertimbangkan dampak lingkungan dari konsumerisme berlebih dan menunjukkan bagaimana gaya hidup minimalis dapat membantu dalam upaya konservasi dan keberlanjutan.Secara keseluruhan, buku ini merupakan upaya Francine Jay untuk tidak hanya membimbing pembaca melalui proses decluttering fisik tetapi juga untuk memperkenalkan mereka pada filosofi yang lebih dalam tentang kesederhanaan dan kepuasan yang berasal dari "memiliki kurang dan hidup lebih." Ini adalah buku yang tidak hanya berbicara tentang minimalisme sebagai estetika tetapi sebagai alat transformasional untuk kualitas hidup yang lebih baik.\n
+    </string>
+    <string name="title_6">Analisis dan Interpretasi Lebih Detail: \"The Joy of Less\" oleh Francine Jay</string>
+    <string name="katalog5">Pendekatan Pengarang:\nFrancine Jay dalam \"The Joy of Less\" mengambil pendekatan yang sangat praktis dan personal untuk menerangkan ide-ide minimalisme.\n\nDaripada hanya menyampaikan teori, dia menekankan pada penerapan konsep-konsep tersebut dalam kehidupan sehari-hari. Ini tercermin dari cara dia mengatur isi bukunya—mulai dari filosofi dasar hingga ke tips penerapan spesifik di berbagai aspek kehidupan.\n\nSalah satu teknik yang efektif yang digunakan Jay adalah penggunaan narasi pribadi dan cerita dari pengalaman orang lain yang telah mengadopsi minimalisme. Ini tidak hanya membuat materi lebih relatable, tetapi juga menunjukkan dampak nyata dari minimalisme pada kualitas hidup individu. \n\nPendekatannya ini sangat inspiratif karena menunjukkan bahwa perubahan gaya hidup ini dapat dilakukan oleh siapa saja, tidak peduli situasi awal mereka.\n\nSelain itu, Jay juga sangat detail dalam menjelaskan proses praktis dari decluttering—seperti metode STREAMLINE yang dia kembangkan—yang memberikan pembaca serangkaian langkah konkret yang dapat diikuti untuk mengurangi kepemilikan mereka.\n\nMetode ini dijelaskan dengan cara yang sangat terstruktur, membuat proses yang bisa jadi menakutkan ini menjadi lebih mudah dan logis untuk diterapkan.\n\nPengaruh Buku:\n\"The Joy of Less\" telah memiliki dampak yang signifikan dalam mempopulerkan dan mendukung gaya hidup minimalis. Sejak diterbitkan, buku ini telah mempengaruhi banyak orang untuk merevaluasi hubungan mereka dengan benda-benda material dan mempertimbangkan kembali apa yang benar-benar penting dalam hidup mereka.\n\nPengaruhnya terlihat tidak hanya dalam individu yang memilih untuk declutter rumah mereka, tetapi juga dalam cara orang memikirkan konsumsi dan keberlanjutan.\n\nBuku ini telah menjadi sumber inspirasi bagi banyak gerakan dan inisiatif yang berfokus pada pengurangan limbah, konsumsi yang lebih sadar, dan gaya hidup yang lebih berkelanjutan. Dalam konteks yang lebih luas, \"The Joy of Less\" juga telah mempengaruhi pembicaraan tentang minimalisme di media, menambahkan suara yang berwibawa dan mudah diakses ke dalam diskusi tentang bagaimana minimalisme dapat menjadi alat untuk meningkatkan kesejahteraan pribadi dan global.\n\nBuku ini juga menekankan pada aspek psikologis dari kepemilikan dan bagaimana decluttering dapat membebaskan kita dari banyak beban mental dan emosional yang tidak kita sadari. Ini tidak hanya mengubah cara individu mengatur rumah mereka, tetapi juga cara mereka mengatur pikiran dan prioritas mereka.\n\nSecara keseluruhan, pendekatan praktis dan inspiratif Francine Jay dan pengaruh signifikan buku \"The Joy of Less\" telah membantu membentuk pemikiran kontemporer tentang minimalisme, membuatnya menjadi lebih dari sekadar tren—melainkan sebagai gaya hidup yang berkelanjutan dan memuaskan.\n</string>
+    <string name="title_7">Penilaian Pribadi Lebih Detail: \"The Joy of Less\" oleh Francine Jay</string>
+    <string name="katalog6">Kelebihan\n\nSaran yang Praktis dan Langsung Aplikatif\nFrancine Jay menonjol dalam menyajikan saran yang bisa langsung diaplikasikan. Buku ini tidak hanya membahas teori minimalisme, tapi juga memberikan panduan langkah demi langkah yang praktis tentang cara decluttering dan merampingkan kepemilikan di setiap aspek kehidupan sehari-hari. Dari mengatur dapur hingga memilah pakaian, Jay menyediakan checklist dan pertanyaan yang membantu pembaca untuk membuat keputusan yang sadar tentang apa yang mereka butuhkan versus apa yang mereka inginkan. Pendekatan ini sangat bermanfaat bagi mereka yang baru mengenal minimalisme atau bagi siapa saja yang merasa kewalahan dengan jumlah barang yang mereka miliki.\n\nPenulisan yang Jelas dan Motivasi\nGaya penulisan Jay sangat jernih dan menginspirasi. Dia menggunakan bahasa yang mudah dipahami dan menghindari jargon yang bisa membingungkan pembaca non-spesialis. Jay juga sering menyisipkan cerita pribadi dan testimoni dari orang-orang yang telah mengadopsi minimalisme dalam kehidupan mereka, yang menambah elemen motivasi. Buku ini dirancang tidak hanya untuk menginformasikan tetapi juga untuk memotivasi pembaca untuk mengambil tindakan, membuatnya menjadi sumber yang berharga bagi mereka yang mencari dorongan untuk mengubah gaya hidup mereka.\n\nKekurangan\nMeskipun kebanyakan saran dalam buku ini dapat diaplikasikan secara luas, ada kalanya pendekatan minimalis yang diusulkan oleh Jay mungkin terasa terlalu ekstrem bagi beberapa pembaca. Misalnya, Jay mendorong pembaca untuk mengurangi kepemilikan mereka ke jumlah yang sangat minim, yang mungkin tidak praktis atau diinginkan bagi semua orang.\nBagi individu yang memiliki keluarga besar atau hobi yang membutuhkan peralatan khusus, beberapa saran mungkin terasa kurang dapat diadaptasi. Ini bisa menimbulkan tantangan bagi pembaca yang ingin mengimplementasikan minimalisme tanpa mengorbankan fungsi atau kenyamanan hidup mereka.\n\nPengalaman Membaca\nThe Joy of Less memberikan pengalaman membaca yang mendalam dan sering kali pencerahan. Buku ini menggugah pembaca untuk merenungkan kebiasaan konsumsi mereka sendiri dan mendorong introspeksi tentang apa yang benar-benar memberi nilai dalam hidup mereka. Bagi banyak orang, membaca buku ini bisa menjadi titik balik, memberi mereka alat dan inspirasi untuk memulai perjalanan menuju gaya hidup yang lebih sederhana dan lebih memuaskan.\n\nRating\nSaya memberikan buku ini rating 8 dari 10 . Alasan utama untuk rekomendasi ini adalah karena buku ini memberikan pandangan yang komprehensif dan praktis tentang minimalisme yang bisa diakses oleh pemula maupun mereka yang sudah berpengalaman dalam gaya hidup minimalis. Namun, penting untuk diingat bahwa pendekatannya yang terkadang radikal mungkin tidak cocok untuk semua pembaca, yang mungkin mencari keseimbangan yang lebih moderat dalam mengurangi barang-barang mereka.\n</string>
 </resources>

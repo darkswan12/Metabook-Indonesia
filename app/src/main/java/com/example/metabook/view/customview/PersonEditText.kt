@@ -12,8 +12,8 @@ import com.example.metabook.R
 
 class PersonEditText : AppCompatEditText {
 
-    private var isNameValid: Boolean = false
-    private lateinit var personIcon: Drawable
+    private lateinit var lockImage: Drawable
+    private var isPassValid: Boolean = false
 
     constructor(context: Context) : super(context) {
         init()
@@ -32,29 +32,37 @@ class PersonEditText : AppCompatEditText {
     }
 
     private fun init() {
-        personIcon =
-            ContextCompat.getDrawable(context, R.drawable.ic_baseline_person_24) as Drawable
-        onShowVisibilityIcon(personIcon)
+        lockImage = ContextCompat.getDrawable(context, R.drawable.ic_baseline_lock_24) as Drawable
+        onShowVisibilityIcon(lockImage)
 
-        addTextChangedListener { text ->
-            validateName(text?.trim().toString())
-        }
+        addTextChangedListener(onTextChanged = { _: CharSequence?, _: Int, _: Int, _: Int ->
+            validatePassword()
+        })
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = resources.getString(R.string.name_required)
-
+        hint = resources.getString(R.string.confirm_input_password)
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
-    private fun validateName(name: String) {
-        if (name.isEmpty()) {
-            isNameValid = false
-            error = resources.getString(R.string.name_required)
-        } else {
-            isNameValid = true
-            error = null
+    private fun validatePassword() {
+        val pass = text?.trim()
+        when {
+            pass.isNullOrEmpty() -> {
+                isPassValid = false
+                error = resources.getString(R.string.input_password)
+            }
+
+            pass.length < 8 -> {
+                isPassValid = false
+                error = resources.getString(R.string.password_length)
+            }
+
+            else -> {
+                isPassValid = true
+                error = null
+            }
         }
     }
 

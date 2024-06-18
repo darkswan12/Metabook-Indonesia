@@ -2,13 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.main.ui.detailbook.fragment.SummaryFragment">
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toTopOf="@+id/rv_detail_recommendations"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,106 +18,123 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/bookDetailPagesTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
-            android:text="@string/pages"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/bookDetailPagesTitle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_page_round"
+                />
 
-        <TextView
-            android:id="@+id/bookDetailPagesNumber"
-            android:layout_width="386dp"
+            <TextView
+                android:id="@+id/bookDetailPagesNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/empty_text"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="@string/empty_text"
-            android:textSize="14sp" />
-
-        <TextView
+            android:layout_marginTop="5dp">
+        <ImageView
             android:id="@+id/bookDetailCategoriesTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
-            android:text="@string/categories"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+           android:src="@drawable/ic_category" />
 
         <TextView
             android:id="@+id/bookDetailCategories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
             android:text="@string/empty_text"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/grey"
             android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/bookDetailPublisherTitle"
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/bookDetailPublisherTitle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
-            android:text="@string/publisher"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:src="@drawable/ic_publisher"/>
 
         <TextView
             android:id="@+id/bookDetailPublisher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/grey"
             android:text="@string/empty_text"
             android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/bookDetailPublishDateTitle"
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/bookDetailPublishDateTitle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
-            android:text="@string/published_date"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:src="@drawable/ic_date_publish_round" />
 
         <TextView
             android:id="@+id/bookDetailPublishDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/grey"
             android:text="@string/empty_text"
             android:textSize="14sp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/titleDescBook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/titleDescBook"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -126,24 +144,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="12dp"
-            android:textColor="#979797"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/grey"
             app:layout_constraintTop_toBottomOf="@id/cv_rating" />
     </LinearLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_detail_recommendations"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/row_item_detail_recommendation" />
-</androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detail_recommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="0dp"
+            tools:listitem="@layout/row_item_detail_recommendation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 
 

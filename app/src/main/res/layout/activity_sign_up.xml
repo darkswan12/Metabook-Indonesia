@@ -9,42 +9,42 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="422dp"
-        android:layout_height="301dp"
-        android:src="@drawable/backgroundconcept"
+        android:layout_height="292dp"
+        android:contentDescription="@string/description_image"
+        android:src="@drawable/asset_auth"
         app:layout_constraintBottom_toTopOf="@+id/titleTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/description_image"/>
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="357dp"
-        android:layout_height="203dp"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/description_image"
         app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.207"
-        android:contentDescription="@string/description_image"
-        app:srcCompat="@drawable/signuptrans" />
+        app:layout_constraintVertical_bias="0.629"
+        app:srcCompat="@drawable/assets_logo" />
 
     <TextView
         android:id="@+id/titleTextView"
         style="@style/text_subhead"
-        android:textSize="20sp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
         android:alpha="0"
         android:text="@string/title_signup_page"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,53 +52,15 @@
         tools:alpha="100" />
 
     <TextView
-        android:id="@+id/nameTextView"
-        style="@style/mytext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:alpha="0"
-        android:text="@string/name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        tools:alpha="100" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nameEditTextLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
-        app:startIconDrawable="@drawable/ic_baseline_person_24">
-
-        <com.example.metabook.view.customview.PersonEditText
-            android:id="@+id/nameEditText"
-            style="@style/mytextfield"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
         android:id="@+id/emailTextView"
         style="@style/mytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:alpha="0"
         android:text="@string/email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
         tools:alpha="100" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -118,6 +80,7 @@
         <com.example.metabook.view.customview.EmailEditText
             android:id="@+id/emailEditText"
             style="@style/mytextfield"
+            android:textColorHint="@color/background_primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -155,10 +118,49 @@
         <com.example.metabook.view.customview.PasswordEditText
             android:id="@+id/passwordEditText"
             style="@style/mytextfield"
+            android:textColorHint="@color/background_primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/confirmpasswordTextView"
+        style="@style/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0"
+        android:text="@string/confirmpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
+        tools:alpha="100" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmpasswordEditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpasswordTextView"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        tools:alpha="100">
+
+        <com.example.metabook.view.customview.PersonEditText
+            android:id="@+id/confirmpasswordEditText"
+            style="@style/mytextfield"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColorHint="@color/background_primary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -167,14 +169,14 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:alpha="0"
         android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpasswordEditTextLayout"
         tools:alpha="100" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -191,7 +193,8 @@
         android:layout_width="wrap_content"
         android:layout_height="64dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.0"
+        app:layout_constraintTop_toTopOf="parent" />
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

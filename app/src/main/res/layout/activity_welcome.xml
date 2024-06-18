@@ -9,18 +9,19 @@
 
     <ImageView
         android:id="@+id/imageScreenView"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_logo" />
+        app:srcCompat="@drawable/assets_logo1" />
     <ImageView
         android:id="@+id/logoMenu1"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/capturemoment"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome_assets_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -55,11 +56,12 @@
         android:id="@+id/logoMenu2"
         android:layout_width="0dp"
         android:layout_height="300dp"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        android:src="@drawable/writestory" />
+        android:src="@drawable/welcome_assets_4" />
 
     <TextView
         android:id="@+id/titleMenu2"
@@ -89,7 +91,7 @@
         android:id="@+id/logoMenu3"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/welcome_back"
+        android:src="@drawable/welcome_assets_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -123,7 +125,7 @@
         android:id="@+id/logoMenu4"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/welcome"
+        android:src="@drawable/welcome_assets_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -163,7 +165,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/background_primary"
+        app:tint="@color/fourth_bg"
         tools:layout_editor_absoluteY="731dp" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
@@ -178,7 +180,7 @@
         app:layout_constraintTop_toTopOf="@+id/menu1"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/background_primary" />
+        app:tint="@color/fourth_bg" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu3"
@@ -192,7 +194,7 @@
         app:layout_constraintTop_toTopOf="@+id/menu2"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/background_primary" />
+        app:tint="@color/fourth_bg" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu4"
@@ -206,7 +208,7 @@
         app:layout_constraintTop_toTopOf="@+id/menu3"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/background_primary" />
+        app:tint="@color/fourth_bg" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
@@ -215,7 +217,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:alpha="0"
-        android:backgroundTint="@color/background_primary"
+        android:backgroundTint="@color/fourth_bg"
         android:text="@string/login"
         app:layout_constraintBottom_toTopOf="@+id/menu2"
         app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -229,7 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:alpha="0"
-        android:backgroundTint="@color/background_primary"
+        android:backgroundTint="@color/fourth_bg"
         android:text="@string/signup"
         app:layout_constraintBottom_toTopOf="@+id/menu2"
         app:layout_constraintEnd_toEndOf="parent"

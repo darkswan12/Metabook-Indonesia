@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#FF7F3E</color>
+    <color name="purple_500">#FF7F3E</color>
+    <color name="purple_700">#FF7315</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="navy">#2D3D4F</color>
 
-    <color name="background_primary">#0f141f</color>
-    <color name="background_secondary">#48dadd</color>
-    <color name="background_secondary_two">#38b6db</color>
+    <color name="background_primary">#FF7F3E</color>
+    <color name="background_secondary">#FFF6E9</color>
+    <color name="background_secondary_two">#80C4E9</color>
+    <color name="background_secondary_three">#604CC3</color>
+    <color name="tersier">#e0c679</color>
 
     <color name="PrimaryColor">#6073E9</color>
 
@@ -24,4 +25,11 @@
     <color name="yellowStars">#EE9035</color>
     <color name="cardBackroundColor">#FAFAFA</color>
 
+    <color name="background_light">#F4F4F4</color>
+    <color name="background_dark">#1A1A1B</color>
+
+    <color name="prmary_bg">#94F3E4</color>
+    <color name="secondary_bg">#37AA9C</color>
+    <color name="third_bg">#333F44</color>
+    <color name="fourth_bg">#FF7315</color>
 </resources>

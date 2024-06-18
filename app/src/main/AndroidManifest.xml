@@ -10,23 +10,28 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/round_logo2"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo"
+        android:roundIcon="@drawable/round_logo2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MetaBookID"
+        android:theme="@style/Base.Theme.MetaBookID"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".view.main.ui.MainActivity"
+            android:name=".view.main.ui.splash.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.main.MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.MetaBookID.NoActionBar" />
+            android:label="@string/title_activity_main" />
         <activity
             android:name=".view.main.ui.setting.SettingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.main.ui.setting.AboutActivity"
             android:exported="false" />
         <activity
             android:name=".view.main.ui.auth.signup.SignUpActivity2"
@@ -38,26 +43,14 @@
             android:name=".view.main.ui.detailbook.DetailBookActivity"
             android:exported="false" />
         <activity
-            android:name=".view.main.MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2" />
-        <activity
             android:name=".view.main.ui.welcome.WelcomeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".view.main.ui.auth.signup.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".view.main.ui.auth.login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.main.MainActivity"
             android:exported="false" />
 
         <meta-data

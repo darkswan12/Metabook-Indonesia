@@ -7,13 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.metabook.databinding.ActivityWelcomeBinding
 import com.example.metabook.view.main.ui.auth.login.LoginActivity
-import com.example.metabook.view.main.ui.auth.signup.SignUpActivity
+import com.example.metabook.view.main.ui.auth.signup.SignUpActivity1
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
@@ -42,7 +42,7 @@ class WelcomeActivity : AppCompatActivity() {
         }
 
         binding.signupButton.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity1::class.java))
         }
     }
 

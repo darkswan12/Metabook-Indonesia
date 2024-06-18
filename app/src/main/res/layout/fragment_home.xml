@@ -11,6 +11,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/background_secondary"
         app:elevation="0dp">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -30,7 +31,7 @@
                     android:id="@+id/tv_user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hi, Reihan!"
+                    android:text="Welcome to MetaBook-ID"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:maxLines="1"
@@ -45,10 +46,10 @@
                     android:maxLines="1"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="search and find your book!"
-                    android:fontFamily="@font/poppins_medium"
+                    android:fontFamily="@font/poppins_semibold"
                     android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/tv_user_name"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/background_dark"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_recent_book"
@@ -73,7 +74,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:backgroundTint="@color/PrimaryColor">
+                            android:backgroundTint="@color/background_primary">
 
                             <com.google.android.material.card.MaterialCardView
                                 android:id="@+id/btn_recent_book"
@@ -91,7 +92,7 @@
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     android:src="@drawable/ic_play"
-                                    app:tint="@color/PrimaryColor"
+                                    app:tint="@color/background_primary"
                                     android:scaleType="centerCrop"
                                     android:layout_gravity="center"
                                     android:background="@color/white" />
@@ -109,7 +110,7 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/btn_recent_book"
                                 android:layout_marginStart="12dp"
-                                android:backgroundTint="@color/PrimaryColor"
+                                android:backgroundTint="@color/background_primary"
                                 android:orientation="vertical">
 
                                 <TextView
@@ -120,9 +121,9 @@
                                     android:text="Recent Viewed Book"
                                     android:fontFamily="@font/poppins_semibold"
                                     android:textSize="11sp"
-                                    android:backgroundTint="@color/PrimaryColor"
+                                    android:backgroundTint="@color/background_primary"
                                     app:layout_constraintTop_toBottomOf="@id/tv_user_name"
-                                    android:textColor="@color/white"/>
+                                    android:textColor="@color/background_secondary"/>
 
                                 <TextView
                                     android:id="@+id/tv_recent_book_title"
@@ -130,13 +131,13 @@
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
                                     android:ellipsize="end"
-                                    android:backgroundTint="@color/PrimaryColor"
+                                    android:backgroundTint="@color/background_primary"
                                     app:layout_constraintStart_toStartOf="parent"
                                     android:text="Recent Viewed Book"
                                     android:fontFamily="@font/poppins_medium"
                                     android:textSize="9sp"
                                     app:layout_constraintTop_toBottomOf="@id/tv_user_name"
-                                    android:textColor="@color/white"/>
+                                    android:textColor="@color/background_secondary"/>
 
                             </LinearLayout>
 
@@ -172,9 +173,9 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:text="Books For You"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="17sp"
+                    android:text="@string/recommend_books"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/cv_recent_book"
                     android:layout_marginTop="22dp"
                     android:textColor="@color/black"/>
@@ -199,21 +200,25 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:tabMode="scrollable"
-            app:tabIndicatorGravity="stretch"
-            app:tabSelectedTextColor="@color/white"
-            app:tabIndicatorAnimationMode="elastic"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/background_primary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tabRippleColor="@android:color/transparent"
-            app:tabIndicator="@drawable/tab_indicator" />
+            app:tabIndicator="@color/background_secondary"
+            app:tabIndicatorAnimationMode="fade"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="stretch"
+            app:tabMode="scrollable"
+            app:tabRippleColor="?android:attr/colorActivatedHighlight"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/background_dark" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"

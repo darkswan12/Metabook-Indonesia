@@ -5,6 +5,7 @@
     android:id="@+id/DetailBook"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="2dp"
     tools:context=".view.main.ui.detailbook.DetailBookActivity">
 
     <ScrollView
@@ -17,11 +18,12 @@
 
         <ImageButton
             android:id="@+id/btn_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_back"
+            android:src="@drawable/ic_round_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,8 +32,8 @@
         android:layout_width="417dp"
         android:layout_height="250dp"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
+        android:outlineSpotShadowColor="@color/background_secondary"
+        app:cardBackgroundColor="@color/background_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_back">
@@ -45,7 +47,7 @@
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 app:cardCornerRadius="20dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -64,13 +66,14 @@
                 android:layout_width="243dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="65dp"
+                android:layout_marginTop="68dp"
                 android:layout_marginEnd="10dp"
                 android:text="Journey To the star"
                 android:textColor="#2E2E2E"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/cardView"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,6 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="10dp"
+                    android:background="@color/background_secondary"
                     android:paddingVertical="8dp">
 
                     <ImageView
@@ -125,11 +129,21 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@id/ic_rating"
                         app:layout_constraintTop_toTopOf="parent" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buy"
+                android:layout_width="82dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/background_primary"
+                android:text="@string/buy"
+                android:textColor="@color/background_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -137,13 +151,14 @@
         <ToggleButton
             android:id="@+id/btn_favorite"
             style="@style/favoriteButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/ic_toggle_favorite"
+            android:background="@drawable/ic_favorite_border"
+            android:checked="false"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/cv_book_cover"
             app:layout_constraintEnd_toEndOf="parent"
@@ -154,11 +169,11 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/background_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cv_book_cover"
-        app:tabTextColor="@android:color/white"
+        app:tabTextColor="@color/background_primary"
         tools:ignore="MissingConstraints" />
 
     <androidx.viewpager2.widget.ViewPager2

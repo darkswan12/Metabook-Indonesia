@@ -6,6 +6,16 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.metabook.view.main.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.metabook.view.main.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.metabook.view.main.ui.home.HomeFragment"
         android:label="@string/title_home"

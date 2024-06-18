@@ -1,120 +1,85 @@
 package com.example.metabook.view.main
 
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.preferencesDataStore
+import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.metabook.R
 import com.example.metabook.databinding.ActivityMainBinding
-import com.example.metabook.view.main.ui.auth.login.LoginActivity
+import com.example.metabook.view.main.ui.setting.SettingActivity
 import com.example.metabook.view.main.ui.welcome.WelcomeActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 
+
 class MainActivity : AppCompatActivity() {
-    //private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "token")
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-   // private lateinit var mainViewModel: MainViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setupViewModel()
-        setupToolbar()
-        //setupView()
+        setSupportActionBar(binding.appBarMain.toolbar)
+
+
+        val drawerLayout: DrawerLayout = binding.drawerLayout
+        val navView: NavigationView = binding.navView
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
+            ), drawerLayout
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+        // Find reference to bottom navigation view
+        val navView1: BottomNavigationView = binding.buttomNavView
+        // Hook your navigation controller to bottom navigation view
+        navView1.setupWithNavController(navController)
+
     }
 
-    private fun setupToolbar() {
-        binding.topAppBar.setOnMenuItemClickListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.menu_logout -> {
-                    FirebaseAuth.getInstance().signOut()
-                    startActivity(Intent(this, WelcomeActivity::class.java))
-                    finishAffinity()
-                    true
-                }
-
-                R.id.menu_setting_language -> {
-                    startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
-                    finishAffinity()
-                    true
-                }
-
-                else -> false
-            }
-        }
-    }
-
-
-    /*private fun setupViewModel() {
-        val pref = UserPreference.getInstance(dataStore)
-        val viewModelFactory = ViewModelFactory(pref)
-
-        mainViewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
-    }
-
-    private fun setupView() {
-
-        storyAdapter = StoryAdapter()
-        mainViewModel.getUserToken().observe(this) { token ->
-            if (token.isNotEmpty()) {
-                mainViewModel.stories.observe(this) {
-                    when (it) {
-                        is Result.Success -> {
-                            it.data?.let { stories ->
-                                storyAdapter.submitList(stories)
-                            }
-                            showLoad(false)
-                            val layoutManager = LinearLayoutManager(this)
-                            binding.listStory.layoutManager = layoutManager
-                            binding.listStory.adapter = storyAdapter
-                        }
-
-                        is Result.Loading -> showLoad(true)
-                        is Result.Error -> {
-                            Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
-                        }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main, menu)
+            binding.appBarMain.toolbar.setOnMenuItemClickListener { menuItem ->
+                when (menuItem.itemId) {
+                    R.id.action_setting -> {
+                        startActivity(Intent(this, SettingActivity::class.java))
+                        finishAffinity()
+                        true
                     }
-                }
-                CoroutineScope(Dispatchers.IO).launch {
-                    mainViewModel.getStories()
-                }
-            } else {
-                startActivity(Intent(this, WelcomeActivity::class.java))
-                finish()
-            }
-        }
-
-        mainViewModel.logoutResult.observe(this) { result ->
-            when (result) {
-                is Result.Success -> {
-                    startActivity(Intent(this, LoginActivity::class.java))
-                    finishAffinity()
-                }
-
-                is Result.Loading -> {
-                    showLoad(true)
-                }
-
-                is Result.Error -> {
-                    Toast.makeText(this, result.message, Toast.LENGTH_SHORT).show()
-                    showLoad(false)
+                    R.id.logout -> {
+                        FirebaseAuth.getInstance().signOut()
+                        startActivity(Intent(this, WelcomeActivity::class.java))
+                        finishAffinity()
+                        true
+                    }
+                    else -> false
                 }
             }
-        }
-
+        return true
     }
 
-    private fun showLoad(isLoad: Boolean) {
-        if (isLoad) {
-            binding.progressBar.visibility = View.VISIBLE
-        } else {
-            binding.progressBar.visibility = View.GONE
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+
+
         }
-    }*/
+
 }

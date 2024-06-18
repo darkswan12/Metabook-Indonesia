@@ -204,90 +204,25 @@
                 android:textColor="#F79200"
                 android:layout_marginStart="5dp"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_marginBottom="15dp">
-            <TextView
-                android:id="@+id/genre11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Art &amp; Photography"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:background="@drawable/outline"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp"
-                android:textAlignment="center"
-                android:textColor="#F79200"
-                android:layout_marginEnd="5dp"/>
-            <TextView
-                android:id="@+id/genre12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food &amp; drink"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:background="@drawable/outline"
-                android:paddingHorizontal="15dp"
-                android:paddingVertical="10dp"
-                android:textAlignment="center"
-                android:textColor="#F79200"
-                android:layout_marginStart="5dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_marginBottom="15dp">
-            <TextView
-                android:id="@+id/genre13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Art &amp; Photography"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:background="@drawable/outline"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp"
-                android:textAlignment="center"
-                android:textColor="#F79200"
-                android:layout_marginEnd="5dp"/>
-            <TextView
-                android:id="@+id/genre14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food &amp; drink"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:background="@drawable/outline"
-                android:paddingHorizontal="15dp"
-                android:paddingVertical="10dp"
-                android:textAlignment="center"
-                android:textColor="#F79200"
-                android:layout_marginStart="5dp"/>
-        </LinearLayout>
+
     </LinearLayout>
 
 
     <Button
-        android:id="@+id/reg3Cont"
+        android:id="@+id/next2"
         android:layout_width="186dp"
         android:layout_height="51dp"
         android:layout_marginTop="48dp"
         android:layout_weight="1"
         android:background="@drawable/reg_button"
         android:fontFamily="sans-serif-medium"
-        android:text="Continue"
+        android:text="Next"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genres"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.622" />
 </androidx.constraintlayout.widget.ConstraintLayout>

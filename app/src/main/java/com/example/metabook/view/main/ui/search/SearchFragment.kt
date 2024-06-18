@@ -37,6 +37,7 @@ class SearchFragment : Fragment() {
         setUpSortByMenu()
 
 
+
         return binding.root
     }
 

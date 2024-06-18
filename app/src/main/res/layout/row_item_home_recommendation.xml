@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="200dp"
+    android:layout_width="180dp"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="5dp"
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical"
-    android:backgroundTint="@color/cardBackroundColor"
+    android:backgroundTint="@color/background_secondary"
     app:cardCornerRadius="10dp"
     app:cardElevation="1dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp">
+        android:paddingHorizontal="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/background_secondary"
+        android:paddingVertical="5dp">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cv_img_book"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            app:cardCornerRadius="12dp"
+            app:cardCornerRadius="8dp"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/img_book"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/txt_books_cover_image"
+                android:cropToPadding="false"
                 android:scaleType="centerCrop"
-                android:src="@drawable/img_sample_book"
-                android:contentDescription="@string/txt_books_cover_image"/>
+                android:src="@drawable/img_sample_book" />
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -40,6 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/background_secondary"
             android:text="A Leader"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -54,8 +59,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
+            android:background="@color/background_secondary"
             android:text="Kevin Anderson"
             android:layout_marginEnd="12dp"
+            android:layout_marginStart="5dp"
             android:textSize="12sp"
             android:textStyle="normal"
             android:maxLines="1"
@@ -66,8 +73,9 @@
             android:id="@+id/circle_dot"
             android:layout_width="6dp"
             android:layout_height="6dp"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/background_primary"
             app:cardCornerRadius="100dp"
             app:layout_constraintStart_toStartOf="@id/tv_author_book"
             app:layout_constraintTop_toBottomOf="@id/tv_author_book" />
@@ -77,7 +85,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:background="@color/background_secondary"
             android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Click to see Details"
             android:textColor="@color/grey"
@@ -90,25 +100,30 @@
             android:id="@+id/tv_rating_book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/background_secondary"
             android:fontFamily="@font/poppins_medium"
             android:text="5.5"
             android:textColor="@color/yellowStars"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@id/circle_dot"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/circle_dot" />
+            app:layout_constraintTop_toTopOf="@id/circle_dot"
+            app:layout_constraintVertical_bias="0.533" />
 
         <ImageView
             android:layout_width="14dp"
             android:layout_height="14dp"
-            android:layout_marginEnd="6dp"
+            android:layout_marginEnd="4dp"
             android:layout_marginBottom="2dp"
+            android:background="@color/background_secondary"
+            android:contentDescription="@string/txt_star_icon_content"
             android:src="@drawable/ic_star"
             app:layout_constraintBottom_toBottomOf="@id/tv_rating_book"
             app:layout_constraintEnd_toStartOf="@id/tv_rating_book"
             app:layout_constraintTop_toTopOf="@id/tv_rating_book"
-            app:tint="@color/yellowStars"
-            android:contentDescription="@string/txt_star_icon_content" />
+            app:layout_constraintVertical_bias="0.4"
+            app:tint="@color/yellowStars" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

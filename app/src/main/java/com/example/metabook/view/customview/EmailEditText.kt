@@ -47,6 +47,7 @@ class EmailEditText : AppCompatEditText {
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
+
     private fun validateEmail() {
         val email = text?.trim()
         if (email.isNullOrEmpty()) {

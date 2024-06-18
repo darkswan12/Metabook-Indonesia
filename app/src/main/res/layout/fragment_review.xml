@@ -1,14 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.main.ui.detailbook.fragment.ReviewFragment">
+    android:layout_height="wrap_content"
+    android:measureAllChildren="true"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    android:minHeight="0dp">
+<FrameLayout
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+       tools:context=".view.main.ui.detailbook.fragment.ReviewFragment"
+    android:background="@color/background_secondary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/title_katalog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="@string/title_katalog"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/katalog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog" />
+
+            <TextView
+                android:id="@+id/title_katalog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:text="@string/title_daftar_isi"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog" />
+
+            <TextView
+                android:id="@+id/katalog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog1"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog2" />
+
+            <TextView
+                android:id="@+id/title_katalog3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:text="@string/title_3"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog1" />
+
+            <TextView
+                android:id="@+id/katalog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog2"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog3" />
+
+            <TextView
+                android:id="@+id/title_katalog4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:text="@string/title_4"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog2" />
+
+            <TextView
+                android:id="@+id/katalog3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog3"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog4" />
+
+            <TextView
+                android:id="@+id/title_katalog5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:text="@string/title_5"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog3" />
+
+            <TextView
+                android:id="@+id/katalog4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog4"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog5" />
+            <TextView
+                android:id="@+id/title_katalog6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:text="@string/title_6"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog4" />
+
+            <TextView
+                android:id="@+id/katalog5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog5"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog6" />
+            <TextView
+                android:id="@+id/title_katalog7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_primary"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                android:text="@string/title_7"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/katalog5" />
+
+            <TextView
+                android:id="@+id/katalog6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="@string/katalog6"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_katalog7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
+</androidx.core.widget.NestedScrollView>

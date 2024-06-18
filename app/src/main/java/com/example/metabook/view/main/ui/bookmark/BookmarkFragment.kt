@@ -34,6 +34,7 @@ class BookmarkFragment : Fragment() {
         mAdapter = BookmarkAdapter()
 
         setUpRecyclerView()
+       // getactivity().getSupportActionBar().hide();
         return binding.root
     }
 

@@ -21,6 +21,8 @@ import com.example.metabook.helper.OnItemClickCallback
 import com.example.metabook.helper.constant
 import com.example.metabook.view.main.ui.detailbook.DetailBookActivity
 import com.example.metabook.view.main.ui.home.adapter.BookRecommendationsAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class HomeFragment : Fragment() {
 
@@ -32,7 +34,7 @@ class HomeFragment : Fragment() {
     private val viewModel get() = _viewModel as HomeViewModel
 
     private lateinit var id: String
-
+  //  private lateinit var user: FirebaseUser
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -47,6 +49,7 @@ class HomeFragment : Fragment() {
         viewModel.getRandomBooks(getRandomBookCategories)
         viewModel.booksResponse.observe(viewLifecycleOwner) { setupRecyclerView(it.items) }
 
+
         id = viewModel.getRecentBookId().toString()
         viewModel.getBooksById(id)
         viewModel.recentBooksResponse.observe(viewLifecycleOwner){ setUpRecentViewedBook(it) }
@@ -54,8 +57,11 @@ class HomeFragment : Fragment() {
 //        NotificationService().createNotificationChannel(requireContext())
 //        NotificationService().scheduleNotification(requireContext(), "iyaa", "okeee")
 
+           // binding.tvUserName.text = user.displayName.toString()
+
 
         setUpTabBarAndViewPager()
+
 
         return binding.root
     }
@@ -76,10 +82,9 @@ class HomeFragment : Fragment() {
 
     private fun setUpRecentViewedBook(books: ItemsItem) {
         binding.apply {
-
+           // binding.tvUserName.text = FirebaseAuth.getInstance().currentUser?.email.toString()
             val title = books.volumeInfo?.title
             var image: String? = ""
-
             if (books.volumeInfo?.imageLinks?.large != null) {
                 image = books.volumeInfo.imageLinks.large
             } else {

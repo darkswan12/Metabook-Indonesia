@@ -7,9 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.example.metabook.R
 import com.example.metabook.databinding.ActivityLoginBinding
 import com.example.metabook.view.main.MainActivity
-import com.example.metabook.view.main.MainActivity2
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
@@ -38,8 +39,21 @@ class LoginActivity : AppCompatActivity() {
 
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity2::class.java)
-                        startActivity(intent)
+                        AlertDialog.Builder(this).apply {
+                            setTitle(resources.getString(R.string.title_msg))
+                            setMessage(resources.getString(R.string.success_msg))
+                            setPositiveButton(resources.getString(R.string.next_msg)) { _, _ ->
+                                val intent = Intent(context, MainActivity::class.java)
+                                intent.flags =
+                                    Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                                startActivity(intent)
+                                finish()
+                            }
+                            create()
+                            show()
+                        }
+                       // val intent = Intent(this, MainActivity::class.java)
+                        //startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
@@ -54,9 +68,9 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-
+        supportActionBar?.hide()
         if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
