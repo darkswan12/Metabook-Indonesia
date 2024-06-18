@@ -2,19 +2,20 @@
 
 ## Bangkit Capstone Project 2022
 
-Bangkit Capstone Team ID : C22 - PS046 <br>
-Here is our repository for Bangkit 2022 Capstone project. Our team consist of 2 Machine Learning, 2 Mobile Development, and 2 Cloud Computing.
+Bangkit Capstone Team ID : C241-PS464 <br>
+Here is our repository for Bangkit 2024 Capstone project. Our team consist of 3 Machine Learning, 2 Mobile Development, and 2 Cloud Computing.
 
 ## Our Warriors
 
 |              Name              | Bangkit-ID |   Learning Path    |                                                       Contact Link                                                       |
 | :----------------------------: | :--------: | :----------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  |  |  Machine Learning  |            [LinkedIn]() or [GitHub]()             |
-|         |  |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
-|                      |  | Mobile Development |              [LinkedIn]() or [GitHub]()               |
-|         |  | Mobile Development |    [LinkedIn]() or [GitHub]()     |
-|             |  |  Cloud Computing   | [LinkedIn]() or [GitHub]() |
-|                 |  |  Cloud Computing   |        [LinkedIn]() or [GitHub]()        |
+| Tia Noviani | M322D4KX1442 |  Machine Learning  |            [LinkedIn]() or [GitHub]()             |
+| Karina Afifah | M322D4KX1443 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
+| Iwan Kurniawan | M010D4KY2363 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
+| M Mahfudl Awaludin | A704D4KY4200 | Mobile Development |              [LinkedIn]() or [GitHub]()               |
+| Darmawan Suhara | A009D4KY4336 | Mobile Development |    [LinkedIn]() or [GitHub]()     |
+| Shafa Zhafira G | C009D4KX0568 |  Cloud Computing   | [LinkedIn]() or [GitHub]() |
+| Raihan Fathan | C009D4KY0780 |  Cloud Computing   |        [LinkedIn]() or [GitHub]()        |
 
 ## About this project
 
