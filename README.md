@@ -12,8 +12,8 @@ Here is our repository for Bangkit 2024 Capstone project. Our team consist of 3 
 | Tia Noviani | M322D4KX1442 |  Machine Learning  |            [LinkedIn]() or [GitHub]()             |
 | Karina Afifah | M322D4KX1443 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
 | Iwan Kurniawan | M010D4KY2363 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
-| M Mahfudl Awaludin | A704D4KY4200 | Mobile Development |              [LinkedIn]() or [GitHub]()               |
-| Darmawan Suhara | A009D4KY4336 | Mobile Development |    [LinkedIn]() or [GitHub]()     |
+| M Mahfudl Awaludin | A704D4KY4200 | Mobile Development |              [LinkedIn](https://www.linkedin.com/in/mahfudlawaludin26/) or [GitHub]()               |
+| Darmawan Suhara | A009D4KY4336 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/darmawan-suhara-a9426422b/) or [GitHub]()     |
 | Shafa Zhafira G | C009D4KX0568 |  Cloud Computing   | [LinkedIn]() or [GitHub]() |
 | Raihan Fathan | C009D4KY0780 |  Cloud Computing   |        [LinkedIn]() or [GitHub]()        |
 
