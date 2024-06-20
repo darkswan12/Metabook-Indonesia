@@ -19,15 +19,16 @@ Here is our repository for Bangkit 2024 Capstone project. Our team consist of 3 
 
 ## About this project
 
-Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Process Recommendations
+MetaBook is a platform to get the best and most complete popular book reviews & spoilers based on a website To get the optimal reading experience, it is highly recommended to read the whole book & buy the book directly.
+    
 
 ## Documentation
 
-![METABOOK ID]()
+![METABOOK ID](https://youtu.be/CmFLvnpOfhM)
 
 ## System Architecture
 
-![SystemArchitecture]()
+![SystemArchitecture](https://github.com/darkswan12/Metabook-Indonesia/blob/main/assets/Capture.PNG)
 
 ## Repositories
 
@@ -39,12 +40,14 @@ Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Proc
 
 ## API Documentations
 
-API Documentation Endpoint : [Endpoint]()
+API Documentation Endpoint : 
+[Endpoint login recommend](https://login-ukgslf65fa-et.a.run.app/logrecommend)
+[Endpoint click recommend]([https://login-ukgslf65fa-et.a.run.app/logrecommend](https://book-udlgmdtcyq-et.a.run.app/recommendations))
 
 ## Datasets
 
 Dataset Links of This Project :
-
+Google Books API: [link](https://www.googleapis.com/books/v1/volumes)
 
 
 ## UI/UX Design
