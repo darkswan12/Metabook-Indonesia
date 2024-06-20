@@ -53,6 +53,6 @@ Dataset Links of This Project :
 - Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/J6RuVvLLDEzOzQwmyGrJlX/MetaBook-ID?node-id=19-16&t=ATGK6S028SC54Lbj-0)
 - Link Demo Product : [Prototype](https://drive.google.com/file/d/1UmLLsAVnqCU583sfNYcUXv3IWRtNQru6/view?usp=sharing)
 
-## Deployment Link APK Waras
+## Deployment Link APK METABOOK ID
 
-Download Link APK Metabook ID:<br>
+Download Link APK Metabook ID:<br>[Metabook_apk](https://drive.google.com/file/d/1-gDkxUpHMP9rPaqT_sCIpc-dLeW66Qet/view?usp=sharing)
