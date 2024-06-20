@@ -49,9 +49,9 @@ Dataset Links of This Project :
 
 ## UI/UX Design
 
-- Link Lo-Fi Design : [Lo-Fi]()
-- Link Hi-Fi Design : [Hi-Fi]()
-- Link Prototype Design : [Prototype]()
+- Link Lo-Fi Design : [Lo-Fi](https://www.figma.com/design/J6RuVvLLDEzOzQwmyGrJlX/MetaBook-ID?node-id=0-1&t=ATGK6S028SC54Lbj-0)
+- Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/J6RuVvLLDEzOzQwmyGrJlX/MetaBook-ID?node-id=19-16&t=ATGK6S028SC54Lbj-0)
+- Link Demo Product : [Prototype](https://drive.google.com/file/d/1UmLLsAVnqCU583sfNYcUXv3IWRtNQru6/view?usp=sharing)
 
 ## Deployment Link APK Waras
 
