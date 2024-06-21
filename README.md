@@ -22,6 +22,6 @@ Here is our repository for - Cloud Computing.
 ![CloudArchitecture](https://github.com/darkswan12/Metabook-Indonesia/blob/cc-dev/assets/database.PNG)
 <br>
 
-##API Documentation Endpoint : 
+##API Documentation Endpoint : <br>
 [Endpoint login recommend](https://login-ukgslf65fa-et.a.run.app/logrecommend)<br>
 [Endpoint click recommend](https://book-udlgmdtcyq-et.a.run.app/recommendations)
