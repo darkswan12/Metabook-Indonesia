@@ -1,0 +1,7 @@
+LINK:
+
+model di cloud storage: 
+https://storage.googleapis.com/mlrecomend/modelmetabook.json
+
+deploy model cloud run:
+https://book-udlgmdtcyq-et.a.run.app/recommendations

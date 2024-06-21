@@ -1,0 +1,7 @@
+LINK:
+
+model di cloud storage: 
+https://storage.googleapis.com/loginml/logiin.json
+
+deploy model cloud run:
+https://login-ukgslf65fa-et.a.run.app/logrecommend
