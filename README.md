@@ -8,8 +8,8 @@ Here is our repository for - Machine Learning.
 ## MACHINE LEARNING SCHEDULE
 |  Task  |         Week 1         |       Week 2        |         Week 3          |         Week 4                      |
 | :----: | :--------------------: | :-----------------: | :---------------------: | :---------------------------------: |   
-| Task 1 | Explore Data |  Build Model    |   ML model testing #1   |          Data collection #2         |
-| Task 2 |  Create Model   |      |  ML model evaluation #1 |          Data preparation #2        |
+| Task 1 | Explore Data |  Build Model    |   ML model testing #1   |          Creating Presentation         |
+| Task 2 |  Create Model   |      |  ML model evaluation #1 |                  |
 | Task 3 |     |                     |  ML model deployment #1 |    |
 | Task 4 |                        |                     |                         |                |
 | Task 5 |                        |                     |                         |              |
