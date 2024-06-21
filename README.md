@@ -20,7 +20,6 @@ Developed two main models for the recommendation system in Metabook Indonesia. T
 
 
 ## TOOLS
-![logo_tf](https://github.com/darkswan12/Metabook-Indonesia/blob/ml-dev/assets/logo_tf.png)
 - Python
 - TensorFlow
 - NumPy
