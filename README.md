@@ -23,5 +23,5 @@ Here is our repository for - Cloud Computing.
 <br>
 
 ##API Documentation Endpoint : 
-[Endpoint login recommend](https://login-ukgslf65fa-et.a.run.app/logrecommend)
-[Endpoint click recommend]([https://login-ukgslf65fa-et.a.run.app/logrecommend](https://book-udlgmdtcyq-et.a.run.app/recommendations))
+[Endpoint login recommend](https://login-ukgslf65fa-et.a.run.app/logrecommend)<br>
+[Endpoint click recommend](https://book-udlgmdtcyq-et.a.run.app/recommendations)
