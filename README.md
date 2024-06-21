@@ -34,9 +34,9 @@ Youtube Video Presentation : [METABOOK ID](https://youtu.be/CmFLvnpOfhM)
 
 |    Branch Name     |                                      Branch Link                                         |
 | :----------------: | :--------------------------------------------------------------------------------------: |
-| Mobile Development | [MD Branch]([https://github.com/yuliusius1/waras-bangkit-capstone-2022/tree/android-dev1](https://github.com/darkswan12/Metabook-Indonesia/tree/md-dev)) |
-|  Cloud Computing   | [CC Branch]([https://github.com/yuliusius1/waras-bangkit-capstone-2022/tree/cc-dev1](https://github.com/darkswan12/Metabook-Indonesia/tree/cc-dev))      |
-|  Machine Learning  | [ML Branch]([https://github.com/yuliusius1/waras-bangkit-capstone-2022/tree/ml-dev](https://github.com/darkswan12/Metabook-Indonesia/tree/ml-dev))       |
+| Mobile Development | [MD Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/md-dev) |
+|  Cloud Computing   | [CC Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/cc-dev)      |
+|  Machine Learning  | [ML Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/ml-dev)       |
 
 ## API Documentations
 
